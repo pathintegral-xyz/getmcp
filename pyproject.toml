@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=61.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "getmcp"
+version = "0.1.1"
+description = "A tool for searching, pulling, and managing MCP servers"
+readme = "README.md"
+requires-python = ">=3.11"
+license = {text = "MIT"}
+authors = [
+    {name = "Jonathan Wang", email = "jonathan.wang@pathintegral.xyz"}
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "requests>=2.28.0",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/pathintegral-xyz/getmcp"
+"Bug Tracker" = "https://github.com/pathintegral-xyz/getmcp/issues"
+
+[project.scripts]
+getmcp = "getmcp.cli:main"
+mcpm = "getmcp.cli:main"
